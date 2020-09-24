@@ -1,0 +1,57 @@
+/* navbar */
+#navbar li a{
+    font-size: 1.5rem;
+    padding: 0px 40px;
+
+}
+
+
+
+/* home section */
+#home{
+    height: 14rem;
+}
+#home::before{
+    height: 31%;
+}
+
+
+
+/* service section */
+#hservice{
+    padding: 0px;
+}
+
+
+
+/* client section */
+#clients::before{
+    height: 18%;
+
+}
+.ponsor{
+    margin: 0px ;
+}
+.clientsimg{
+    height: 6rem;
+    padding: 2rem;
+}
+
+
+/* contact section */
+#contact::before{
+    height: 31%;
+}
+input{
+   width: 37rem; 
+}
+
+
+/* utility classes */
+.h-primary{
+    font-size: 2rem;
+
+}
+.h-secondary{
+    font-size: 1.1rem;
+}

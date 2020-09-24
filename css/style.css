@@ -1,0 +1,207 @@
+/* reset css */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* variables */
+:root{
+    --box-color:red;
+}
+
+/* navbar */
+#navbar{
+    display: flex;
+    /* position: relative; */
+    position:sticky;
+    top:0px;
+}
+/* navbar backgrond color */
+#navbar::before{
+    content: '';
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+/* logo image */
+#navbar #logo img{
+    height: 40px;
+    margin: 10px 20px;
+    padding: 5px 10px;
+    filter: invert(100%);
+}
+#navbar ul{
+    display: flex;
+    margin: 28px 10px;
+}
+/* list style */
+#navbar li{
+    list-style: none;
+    
+}
+#navbar li a{
+   padding: 0px 20px;
+    text-decoration: none;
+    color: white;
+}
+#navbar li a:hover{
+    color:black;
+    background-color: white;
+    border-radius: 20px;
+ }
+ 
+
+
+
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    height: 148px;
+}
+#home::before{
+    content: '';
+    background: url(../background1.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 36%;
+    opacity: 0.8;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -2;
+}
+
+/* service section */
+#service-container{
+    text-align: center;
+    
+}
+#h-service{
+    color:#040410;
+}
+
+
+
+.services{
+    display:flex;
+    margin: 5px 4px;
+    color: #040410;
+}
+.box{
+    border: 2px solid black;
+   text-align: center;
+   margin: 0px 10px;
+   border-radius: 10px;
+   background-color: rgb(201, 185, 185);
+}
+/* food images */
+.box img{
+    width: 150px;
+    height: 180px;
+    display: block;
+    margin: 0px auto;
+}
+
+/* client section */
+#clients{
+    text-align: center;
+    margin: 70px 10px;
+}
+#hclient{
+    color: #040410;
+}
+#clients::before{
+   content: '';
+   background: url(../background3.jpg)no-repeat center center/cover;
+   width: 100%;
+   height: 63%;
+
+   opacity: 0.7;
+   position: absolute;
+   left: 0px;
+   z-index: -1;
+}
+
+.ponsor{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 70px 10px;
+  
+}
+.clientsimg{
+    height: 200px;
+   padding: 10px 25px;
+}
+
+/* contac section */
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  
+}
+#hcontact{
+    color: #040410;
+}
+#contact::before{
+    content: '';
+    background: url(../contact.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 61%;
+    opacity: 0.7;
+    position: absolute;
+    z-index: -1;
+}
+
+
+input{
+    display: flex;
+    flex-direction: column;
+    width:30rem;
+    text-align: center;
+    padding: 2px;
+    margin: 5px;
+    border-radius: 10px;
+
+} 
+#btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    margin: 0px auto;
+    padding:2px;
+}
+#btn:hover{
+    color:black;
+    background-color:grey;
+    border-radius: 10px;
+    border-color: rgba(30, 30, 236, 0.664);
+}
+
+/* footer */
+footer{
+    display: flex;
+    margin: 100px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* utility classes */
+.h-primary{
+    height: 3.5rem;
+    font-size: 2.3rem;
+}
+.h-secondary{
+    font-size: 1.1rem;
+
+}
